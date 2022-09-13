@@ -7,11 +7,13 @@ body{
     font-family: 'Oswald', sans-serif;
 
     font-size: 18px;
-    min-width: 400px;
-    margin-left: 400px;
-    margin-right: 400px;
-
 }
+
+.container{
+    width: 900px;
+    margin: 0 auto ;
+}
+
 p{
     text-indent: 25px;
 }
