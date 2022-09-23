@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Tables</title>
+</head>
+<body>
+    
+    <div class="container">
+        <!--Table 1-->
+        <table>
+            <thead>
+                <tr>
+                    <th class="heading"><span>Name</span><img src="./img/triangl.png" alt="more_inf" class="tiangle"></th>
+                    <th class="date" colspan="2">Data</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="file">File.pdf</td>
+                    <td class="inform">3 mins ago</td>
+                    <td class="dots"><img src="./img/dots.png" alt="" class="dot"></td>
+                </tr>
+                <tr>
+                    <td class="file">File.pdf</td>
+                    <td class="inform">Yesterday</td>
+                    <td class="dots"><img src="./img/dots.png" alt="" class="dot"></td>
+                </tr>
+                <tr>
+                    <td class="file_bottom">File.pdf</td>
+                    <td class="inform_bottom">June 1st , 2019</td>
+                    <td class="dots_bottom"><img src="./img/dots.png" alt="" class="dot"></td>
+                </tr>
+            </tbody>
+        </table>
+        <!--Table 2-->
+        <table>
+            <thead>
+                <tr>
+                    <th class="heading_2"><img src="./img/minus-button(1).png" alt="minus" class="minus"><span>Name</span><img src="./img/triangl.png" alt="more_inf" class="tiangle">
+                    </th>
+                    <th class="date" colspan="2">Data</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="file_2"> <input type="checkbox" class="choose">  File.pdf</td>
+                    <td class="inform">3 mins ago</td>
+                    <td class="dots"><img src="./img/dots.png" alt="" class="dot"></td>
+                </tr>
+                <tr>
+                    <td class="file_2"> <input type="checkbox" class="choose" checked> File.pdf</td>
+                    <td class="inform">Yesterday</td>
+                    <td class="dots"><img src="./img/dots.png" alt="" class="dot"></td>
+                </tr>
+                <tr>
+                    <td class="file_bottom_2"> <input type="checkbox" class="choose" > File.pdf</td>
+                    <td class="inform_bottom">June 1st , 2019</td>
+                    <td class="dots_bottom"><img src="./img/dots.png" alt="" class="dot"></td>
+                </tr>
+            <!--Table 3-->
+            <table >
+                <thead>
+                    <tr>
+                        <th class="heading"><span>Name</span><img src="./img/triangl.png" alt="more_inf" class="tiangle"></th>
+                        <img src="./img/search-interface-symbol.png" alt="search" class="search_img"> 
+                        <th class="date" colspan="2" >Data <input type="text" placeholder="Search"> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="file"><img src="./img/archive.png" alt="archive" class="archive">File.pdf</td>
+                        <td class="inform">3 mins ago</td>
+                        <td class="dots"><img src="./img/dots.png" alt="" class="dot"></td>
+                    </tr>
+                    <tr>
+                        <td class="file"><img src="./img/archive.png" alt="archive" class="archive">File.pdf</td>
+                        <td class="inform">Yesterday</td>
+                        <td class="dots"><img src="./img/dots.png" alt="" class="dot"></td>
+                    </tr>
+                    <tr>
+                        <td class="file_bottom"><img src="./img/archive.png" alt="archive" class="archive">File.pdf</td>
+                        <td class="inform_bottom">June 1st , 2019</td>
+                        <td class="dots_bottom"><img src="./img/dots.png" alt="" class="dot"></td>
+                    </tr>
+                </tbody>
+            </table>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
