@@ -112,11 +112,11 @@ a {
 
 .headline_info{
     width: 322px;
-    height: 120px;
-    margin-bottom: 50px;
+    height: 140px;
 }
 
 .headline_btn{
+    margin-top: 80px;
     width: 96px;
     height: 29px;
     font-size: 18px;
