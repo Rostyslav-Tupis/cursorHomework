@@ -73,8 +73,8 @@ a {
     font-size: 14px;
 
     margin-left: 420px;
-    width: 210px;
-    height: 60px;
+        width: 210px;
+        height: 60px;
     background: #FFFFFF;
     box-shadow: 0px 7px 7px rgba(75, 93, 104, 0.1);
     border-radius: 50px;
@@ -150,11 +150,10 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 470px;
 }
 
 .box_title{
-    width: 475px;
-    height: 100px;
     font-weight: 700;
     font-size: 40px;
     line-height: 130%;
@@ -162,31 +161,28 @@ a {
     margin-bottom: 40px;
 }
 .box_text{
-    width: 470px;
-    height: 170px;
     color: #4B5D68;
-    }
+ }
 
 
 .features{
     margin-top: 150px;
     display: flex;
+    row-gap: 50px;
     flex-direction: column;
     align-items: center;
 }
 
 .main_features{
-    height: 52px;
     font-weight: 700;
     font-size: 40px;
     line-height: 130%;
     color: #212353;
-    margin-bottom: 50px;
 }
 
 .main_text{
     text-align: center;
-    width: 629px;
+    width: 627px;
 }
 
 .features_card{
@@ -194,20 +190,26 @@ a {
     margin-top: 70px;
     flex-wrap: wrap;
     justify-content: space-between;
-    row-gap: 50px;
+    row-gap: 130px;
 }
 
 .card{
-    width: 520px;
-    height: 355px;
     display: flex;
     align-items: center;
     gap: 30px;
+    width: 520px;
+    height: 355px;
+}
+
+.card3{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 520px;
+    height: 355px;
 }
 
 .title_card1{
-    width: 200px;
-    height: 50px; 
     font-size: 24px;
     line-height: 130%;  
     color: #212353;
@@ -215,8 +217,6 @@ a {
 
 .text_card1{
     margin-top: 20px;
-    width: 250px;
-    height: 160px;
     font-size: 16px;
     line-height: 160%;
     margin-bottom: 20px;
@@ -245,28 +245,20 @@ a {
     box-shadow: 0px 3px 3px rgba(75, 93, 104, 0.1);;
 
 }
-.card3{
-    width: 520px;
-    height: 355px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
+
 
 .main_box{
     margin-top: 175px;
-    width: 1118px;
+    max-width: 1118px;
     height: 709px;
     background: #9C69E2;
     border-radius: 50px;
 }
 
 .main_box_title{
-    width: 405px;
-    height: 52px;
-
     font-weight: 700;
     font-size: 40px;
+    margin-bottom: 90px;
     line-height: 130%;
     color: #FFFFFF;
 
@@ -275,10 +267,8 @@ a {
 }
 
 .info{
-    margin-top: 88px;
-    margin-left: 95px;
-
-    width: 949px;
+    margin: 0 auto;
+    max-width: 949px;
     height: 330px;
     background: #FFFFFF;
     box-shadow: 0px 20px 0px rgba(106, 0, 255, 0.199);
@@ -291,18 +281,12 @@ a {
 }
 
 .name{
-    width: 250.12px;
-    height: 30px;
     font-weight: 900;
     letter-spacing: 0.005em;
 
     color: #212353;
 }
 .email{
-    width: 148.6px;
-    height: 22px;
-    font-weight: 500;
-    font-size: 14px;
     line-height: 160%;
     letter-spacing: 0.01em;
 
@@ -362,8 +346,6 @@ footer{
 }
 
 .footer_title{
-    width: 405px;
-    height: 52px;
     font-weight: 700;
     font-size: 40px;
     line-height: 130%;
@@ -372,8 +354,6 @@ footer{
 }
 
 .footer_text{
-    width: 584px;
-    height: 29px;
     font-weight: 500;
     color: #4B5D68;
 }
