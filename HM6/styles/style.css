@@ -138,10 +138,11 @@ a {
 
 .box{
     display: flex;
-    width: 1120px;
-    height: 560px;
+    max-width: 1117px;
     background: rgba(240, 99, 184, 0.15);
     border-radius: 50px;
+    align-items: center;
+    justify-content: space-around;
     
 }
 
@@ -149,8 +150,6 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 60px;
-    padding-top: 40px;
 }
 
 .box_title{
