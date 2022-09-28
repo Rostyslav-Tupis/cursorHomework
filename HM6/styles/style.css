@@ -94,9 +94,12 @@ a {
     margin-left: 20px;
 }
 
+.headline_inner{
+    width: 100%;
+    max-width: 645px;
+}
+
 .title{
-    width: 645px;
-    height: 184px;
     font-weight: 700;
     font-size: 80px;
     line-height: 110%;
@@ -110,9 +113,9 @@ a {
     background-size: 830px 460px;
 }
 
-.headline_info{
-    width: 322px;
-    height: 140px;
+.headline_inner_info{
+    width: 100%;
+    max-width: 322px;
 }
 
 .headline_btn{
@@ -150,7 +153,8 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 470px;
+    width: 100%;
+    max-width: 470px;
 }
 
 .box_title{
@@ -294,12 +298,13 @@ a {
     margin-bottom: 20px;
 }
 
+.main_box_inner_text{
+    width: 100%;
+    max-width: 566.46px;
+}
 .information{
-    width: 566.46px;
-    height: 130px;
     font-size: 18px;
     line-height: 180%;
-
     color: #4B5D68;
 }
 
@@ -438,10 +443,12 @@ footer{
 }
 
 
+.address{
+    width: 100%;
+    max-width: 264px;
+}
 
-.address1{
-    width: 264px;
-    height: 65px;   
+.address1{ 
     font-weight: 500;
     font-size: 16px;
     line-height: 180%;
@@ -450,8 +457,7 @@ footer{
 }
 
 .address2{
-    width: 320px;
-    height: 60px;
+    margin-top: 10px;
     line-height: 180%;
     letter-spacing: 0.01em;
     color: #212353;
@@ -504,9 +510,12 @@ footer{
     margin-top: 120px;
     justify-content: space-between;
 }
+
+.extra_info_inner{
+    width: 100%;
+    max-width: 335px;
+}
 .extra_info_text{
-    width: 335px;
-    height: 50px;
     font-weight: 400;
     font-size: 12px;
     line-height: 180%;
