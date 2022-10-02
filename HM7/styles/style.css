@@ -1,0 +1,663 @@
+body{
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+
+    background: #F5F5F5;
+}
+*{
+    border: none;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    margin: 0 auto;
+}
+
+/* HEADER */
+.header{
+    width: 100%;
+    padding-top: 30px;
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.header_logo_txt{
+    grid-area: logo;
+
+    font-family: 'Rochester';
+    font-style: normal;
+    font-size: 32px;
+    line-height: 41px;
+}
+
+.header_media{
+    grid-area: media;
+
+    margin-right: 40px;
+}
+
+.header_social_media :last-child{
+    margin: 0px;
+}
+
+.header_button{
+    grid-area: btn;
+    margin-right: 35px;
+}
+
+.header_button:last-child{
+    margin: 0px;
+}
+
+.header_nav{
+    display:flex;
+    justify-content: center;
+}
+
+.header_nav_btn{
+    margin-right: 80px;
+    text-decoration: none;
+
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 37px;
+    color: #000000;
+
+    position: relative;
+}
+
+.header_nav_btn:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    opacity: 0;
+
+    background-color:#EDA3B5 ;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity 0.2s linear;
+}
+
+.header_nav_btn:hover::after{
+   opacity: 1;
+}
+
+.header_nav_btn:hover{
+    transition: 0.1s;
+    color: #EDA3B5;
+}
+
+.header_box{
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+.box_img{
+    grid-area: box_img; 
+}
+.box_text{
+    margin-left: 165px;
+    grid-area: box_text;
+}
+
+.box_title{
+    max-width: 365px;
+    width: 100%;
+
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-size: 48px;
+    line-height: 67px;
+    color: #ffffff;
+}
+
+.box_info{
+    margin-top: 15px;
+
+    max-width: 450px;
+    width: 100%;
+
+    font-style: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #ffffff;
+    margin-bottom: 35px;
+}
+
+.button{
+    width: 99px;
+    height: 31px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+
+    width: 255px;
+    height: 77px;
+    background: #1B2437;
+    border-radius: 15px;
+
+    cursor: pointer;
+}
+
+.button:hover{
+    transition: 0.2s;
+    background: #273450;
+}
+
+/* MAIN */
+/* CARDS */
+
+.category{
+    margin-top: 70px;
+
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 450px 300px 300px;
+    grid-template-rows:repeat(2, auto) ;
+    justify-content: center;
+
+    grid-template-areas: 
+    "card1 card2 card3"
+    "card1 card4 card4";
+
+}
+
+.card1{
+    grid-area: card1;
+    position: relative;
+}
+
+.card1_title{
+    max-width: 272px;
+    font-family: 'Playfair Display';
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 45px;
+    color: #ffffff;
+
+
+    position: absolute;
+    top: 270px;
+    left: 32px;
+
+}
+
+
+.card1_text{
+    width: 445px;
+    line-height: 30px;
+    position: absolute;
+    top: 355px;
+    left: 32px;
+    color: #ffffff;
+}
+
+.btn_card1{
+    position: absolute;
+    top: 395px;
+    left: 32px;
+
+    width: 93px;
+    height: 30px;
+    background: #FFFFFF;
+    opacity: 0.4;
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+.btn_card1:hover{
+    background: #EDA3B5;
+    transition: 0.2s;
+}
+
+
+.card2{
+    grid-area: card2;
+
+    background: #EFEFF4;
+    border-radius: 16px;
+    position: relative;
+}
+.card2_text{
+    color: #1B2437;
+    position: absolute;
+    top: 55px;
+    left: 22px;
+}
+.card2_title{
+    font-family: 'Playfair Display';
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 45px;
+    color: #1B2437;
+
+    max-width: 275px;
+    width: 100%;
+
+    position: absolute;
+    top: 83px;
+    left: 22px;
+}
+
+
+.card3{
+    grid-area: card3;
+    position: relative;
+}
+.card3_text{
+    line-height: 30px;
+    color: #FFFFFF;
+
+    position: absolute;
+    top: 53px;
+    left: 39px;
+}
+
+.card3_title{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 45px;
+    color: #FFFFFF;
+
+    position: absolute;
+    top: 83px;
+    left: 39px;
+}
+
+
+.card4{
+    grid-area: card4;
+    position: relative;
+}
+.card4_text{
+    line-height: 30px;
+    color: #1B2437;
+    position: absolute;
+    top: 64px;
+    left: 22px;
+}
+.card4_title{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 45px;
+    color: #1B2437;
+
+    position: absolute;
+    top:94px ;
+    left: 22px;
+}
+
+/* ITEMS */
+
+.items{
+    
+    margin-top: 30px;
+    display: grid;
+    
+    grid-template-columns: repeat(4, 275px);
+    grid-template-rows: 0.3fr 0.2fr 0.2fr;
+    grid-template-areas: 
+    ". . . ."
+    "shoes tshirt bag dress"
+    "dots dots dots dots";
+
+    justify-content: center;
+    text-align: center;
+
+    background-color: #fff;
+    border-radius:  16px;
+}
+
+
+.shoes{
+    align-self: center;
+    grid-area: shoes;
+}
+.tshirt{
+    align-self: center;
+    grid-area: tshirt;
+}
+.bag{
+    height: 150px;
+    align-self: center;
+    grid-area: bag;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    margin-top: 40px;
+}
+.name_bag{  
+    margin-top: 15px;
+}
+.dress{
+    grid-area: dress;
+}
+.dots{
+    grid-area: dots;
+}
+
+.name{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    margin-top: 25px;
+}
+.dots{
+    margin-top: 10px;
+}
+.dot{
+    margin-right: 14px;
+}
+
+/* PRICE CARDS */
+.prices{
+    margin-top: 70px;
+    display: grid;
+
+    grid-template-columns:repeat(3, 350px) ;
+    grid-template-rows: 70px 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+    grid-template-areas:
+    "price_title price_title price_title"
+    "card1 card2 card3"
+    "card4 card5 card6" ;
+}
+
+.price_title{
+    grid-area:price_title;
+}
+
+
+.price_card_title1{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 67px;
+    color: #1B2437;
+}
+
+.like{
+    position: absolute;
+    margin-left: 290px;
+    margin-top: 16px;
+}
+.like:hover{
+    width: 42px;   
+}
+
+
+.price_card_title{
+    font-family: 'Playfair Display';
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+}
+.price_card_text{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+}
+.buy{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.price{
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.price_btn{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+
+    width: 153px;
+    height: 58px;
+    border-radius: 15px;
+    background: #1B2437;
+    cursor: pointer;
+}
+.price_btn:hover{
+    background: #334877;
+    transition: 0.2s;
+}
+
+.price_btn_pink{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+
+    width: 153px;
+    height: 58px;
+    border-radius: 15px;
+    background: #EDA3B5;
+    cursor: pointer;
+}
+.price_btn_pink:hover{
+    background: #e2889e;
+    transition: 0.2s;
+}
+
+
+
+.price_card1{ 
+    grid-area: card1 ;
+    position: relative;
+}
+
+.price_card2{
+    grid-area: card2 ;
+    position: relative;
+}
+.price_card3{
+    grid-area: card3 ;
+    position: relative;
+}
+.price_card4{
+    grid-area: card4 ;
+    position: relative;
+}
+.price_card5{
+    grid-area: card5 ;
+    position: relative;
+}
+.price_card6{
+    grid-area: card6 ;
+    position: relative;
+}
+
+/* MAP */
+.container_map{
+    position: relative;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 380px auto;
+    grid-template-rows: 0.1fr 4fr 0.5fr 130px;
+
+    justify-content: center;
+    grid-template-areas: 
+    "map_title map_title map_title"
+    "map map map"
+    "map map map"
+    "map_phone map_address map_post ";
+}
+.map_title{
+    grid-area: map_title;
+    margin-bottom: 47px;
+}
+.contacts_map{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 67px;
+    color: #1B2437;
+}
+
+.map{
+    grid-area: map;
+}
+
+.map_info{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    
+}
+
+.map_phone{
+    grid-area: map_phone;
+    align-self: center;
+    justify-self: center;
+}
+.phone_icon{
+    margin-left: 43%;
+    margin-bottom: 20px;
+}
+
+.map_address{
+    grid-area: map_address;
+    align-self: center;
+    justify-self: center;
+}
+.ads_icon{
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+.map_post{
+    grid-area: map_post;
+    align-self: center;
+    justify-self: center;
+}
+.envelop_icon{
+    margin-left: 7px;
+    margin-bottom: 22px;
+}
+
+/*FOOTER*/
+.footer_container{
+    margin-top: 70px;
+    margin-bottom: 40px;
+    display: flex;
+    background-color: #fff;
+    justify-content: space-around;
+
+    padding-bottom: 20px;
+}
+.footer_logo{
+    max-width: 255px;
+    width: 100%;
+}
+
+.main_link{
+    margin-top: 45px;
+    margin-bottom: 25px;
+    font-family: 'Playfair Display';
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.footer_logo{
+    margin-top: 45px;
+}
+.header_logo_txt{
+    text-decoration: none;
+    color: #1B2437;
+}   
+.ft_info{
+    margin-top: 30px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #5C5C5C;
+
+}
+.footer_links{
+    line-height: 45px;
+}
+
+a{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    color: #8E8E93;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #66666b; 
+}
+
+
+/*LAST ELEMENTS*/
+
+
+.last{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items:center;
+    column-gap: 1070px;
+
+    padding-bottom: 20px;
+}
+
+.rights{
+    padding-left: 75px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 30px;
+    color: #8E8E93;
+}
+
+.last_icons{
+    padding-right: 50px;
+}
+
+.last_media{
+    margin-right: 40px;
+    
+}
