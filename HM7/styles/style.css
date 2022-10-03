@@ -312,6 +312,11 @@ body{
 
 /* ITEMS */
 
+.wrapper_for_items{
+    display: flex;
+    justify-content: center;
+}
+
 .items{
     
     margin-top: 30px;
