@@ -9,6 +9,10 @@ table{
     gap: 10px;
 }
 
+td{
+    border: 1px solid rgb(0, 238, 255);
+}
+
 td:nth-child(3n){
     background-color: red;
 }
@@ -42,20 +46,34 @@ a{
     background: #44D3A8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 100px;
+    position: relative;
 }
 
-.wrapper_2::before{
+a:hover{
+    background: #3dbd96;
+    transition: 0.3s;
+}
+
+a::before{
     content: '';
     width: 200px;
     height: 2px;
-    background: #C4C4C4;
+    border: 2px solid #C4C4C4;
+    border-left: none;
+    border-right: none;
     margin-right: 46px;
+    position: absolute;
+    left:-250px;
 }
 
-.wrapper_2::after{
+a::after{
     content: '';
     width: 200px;
     height: 2px;
-    background: #C4C4C4;
-    margin-left: 46px;
+    border: 2px solid #C4C4C4;
+    border-left: none;
+    border-right: none;
+    margin-right: 46px;
+    position: absolute;
+    left:560px;
 }
