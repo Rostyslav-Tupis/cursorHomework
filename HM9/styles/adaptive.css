@@ -1,2 +1,429 @@
-@media all and (max-width:1200px){
+@media screen and (max-width: 1200px){
+    .header_container{
+        padding-left: 30px;
+        background-position: 346px;
+        height: 580px;
+    }
+    .section1{
+        background-position: -90px;
+    }
+    .card1{
+        left: -30px;
+        top: 74px;
+        width: 400px;
+    }
+    .card2{
+        left: 119px;
+        top: 269px;
+        width: 300px;
+    }
+    .info{
+        margin-left: 340px;
+    }
+/* SECTION 2 */
+    .section2{
+        background-position: -245px;
+    }
+    .inform{
+        margin-left: 24px;
+    }
+    .phone{
+        right: 251px;
+        top: 113px;
+    }
+    .bell_icon{
+        top: 143px;
+        right: 448px;
+    }
+    .phone_icon{
+        right: 221px;
+    }
+    .dot{
+        right: 629px;
+    }
+/* FEAUTERS */
+    .features{
+        padding: 76px 60px 60px 60px;
+    }
+/* COMMENTS */
+    .comment_card0{
+        display: none;
+    }
+    .cards_comment{
+        margin-left: 15px;
+    }
+    .all_cards{
+        gap: 19px;
+        flex-wrap: wrap;
+    }
+/* COMPANY */
+    .company_example{
+        margin-right: 50px;
+    }
+    .companies{
+        flex-wrap: wrap;
+    }
+    .company {
+        padding: 57px 20px 68px 20px;
+      }
+/* UPPER FOOTER */
+    .upper_footer{
+        background-position: -118px;
+    }
+    .info_upper_ft {
+        margin-right: 10px;
+        width: 450px;
+    }
+/* FOOTER */
+    .footer_container{
+        padding: 48px 119px 47px 163px;
+    }
+    .footer_logo{
+        margin-right: 50px;
+    }
+    .media{
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 995px){
+    .header_container{
+        background-image: none;
+        padding-left:0;
+        text-align: center;
+        align-items: center;
+        min-height: 525px;
+    }
+    .header_text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .head_logo{
+        margin-bottom: 86px;
+    }
+    .phone{
+        right: 40px;
+        top: 110px;
+  }
+  .bell_icon{
+    top: 141px;
+    right: 240px;
+  }
+  .phone_icon{
+    right: 6px;
+  }
+  .dot{
+    right: 428px;
+  }
+  .company{
+    padding: 57px 20px 68px 20px;
+  }
+  .footer_container{
+    flex-wrap: wrap;
+  }
+  .media{
+    margin: 10px auto;
+  }
+}
+
+@media screen and (max-width: 768px){
+    .section_content{
+        justify-content: end;
+        text-align: end;
+        margin-right: 30px;
+    }
+    .card1{
+        left: -3px;
+        top: 231px;
+        width: 361px;
+    }
+    .card2{
+        left: 226px;
+        top: 395px
+    }
+    .info {
+        margin-bottom: 70px;
+    }
+    
+    .phone {
+        right: 40px;
+        top: 110px;
+        width: 313px;
+        }
+    .bell_icon {
+        top: 152px;
+        right: 227px;
+        width: 100px;
+    }
+    .phone_icon {
+        right: 25px;
+        width: 100px;
+      }
+      .dot {
+        display: none;
+      }
+      .inform{
+        max-width: 420px;
+      }
+      .all_cards :nth-child(4){
+        display: none;
+      }
+      .all_cards{
+        flex-wrap: nowrap;
+      }
+      .companies{
+        flex-wrap: wrap;
+      }
+      .company{
+        padding: 57px 20px 20px 20px;   
+      }
+      .companies :last-child{
+        margin-top: 15px;
+      }
+      .company_example{
+        margin-right: 13px;
+      }
+      .upper_footer{
+        background-position: -290px;
+      }
+      .footer_container{
+        padding: 48px 20px 47px 20px;
+      }
+
+}
+
+@media screen and (max-width: 580px){
+    .section1{
+        background-position: -90px 477px;
+        height: 960px;
+    }
+    .info{
+        margin-bottom: 490px;
+    }
+    .card1{
+        left: -1px;
+        top: 530px;
+    }
+    .card2{
+        left: 226px;
+        top: 706px;
+    }
+    .info{
+        margin: 0 0 490px 0;
+    }
+    .section_content{
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+    }
+    .section2{
+        background-position: -747px 486px;
+        min-height: 1200px;
+        text-align: center;
+        justify-content: center;
+        align-items: start;
+        padding: 0;
+    }
+    .bell_icon{
+        top: 585px;
+        right: 349px;
+        width: 100px;
+    }
+    .phone {
+        right: 153px;
+        top: 574px;
+        width: 313px;
+}
+    .phone_icon {
+        right: 116px;
+        width: 109px;
+        top: 861px;
+}
+    .inform{
+        max-width: 420px;
+        margin: 45px 0 0 0;
+    }
+
+    .features{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "title title"
+        "features1 features2"
+        "features3 features4"
+        "features5 features6"
+        "features7 features8"
+        "features9 features9";
+    }
+
+
+    .card_upft{
+        display: none;
+    }
+    .company{
+        padding: 57px 10px 20px 10px;
+    }
+    .companies{
+        flex-wrap: wrap;
+    }
+    .companies :last-child{
+        margin-top: 20px;
+   }
+   .upper_footer{
+        background-image: none;
+   }
+   .info_upper_ft{
+    margin: 0;
+   }
+   .stores{
+    margin-left: 46px;
+   }
+
+   .ft_content{
+    text-align: center;
+    justify-content: center;
+   }
+   .footer_container{
+    padding: 30px 20px 15px 20px;
+    flex-wrap: wrap;
+   }
+   .media{
+    margin: 23px 0 0 0 ;
+   }
+}
+
+@media screen and (max-width: 360px){
+    .header_container{
+        padding: 0 5px 0 5px;
+    }
+    .header_title{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .sub_title{
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .header_stores{
+        margin-right: 12px;
+    }
+
+    .section1{
+        background-image: url(../images/ronaldo_phone.png) , url(../images/white_mobile\ .png);
+        background-position: 0px 477px;
+        height: 865px;
+    }
+    .info{
+        margin: 0 0 399px 0;
+    }
+    .card1{
+        left: 2px;
+        top: 525px;
+        width: 270px;
+      
+    }
+    .card2{
+        left: 78px;
+        top: 670px;
+        width: 232px;
+    }
+
+    .section2{
+        background-position: -853px 486px;
+    }
+    .section_content2{
+        padding: 0 20px 0 20px; 
+    }
+    .under_title2_last{
+        margin-top: 25px;
+    }
+
+    .bell_icon{
+        top: 580px;
+        right: 227px;
+    }
+    .phone{
+        right: 42px;
+        top: 574px;
+    }
+    .phone_icon{
+        right: 22px;
+        width: 103px;
+        top: 856px;
+    }
+
+
+    .features{
+        padding: 0;
+        grid-template-columns: 1fr ;
+        grid-template-areas:
+        "title"
+        "features1"
+        "features2"
+        "features3"
+        "features4"
+        "features5"
+        "features6"
+        "features7"
+        "features8"
+        "features9";
+        gap: 15px;
+        background-image: none;
+        background-color: #FAFAFA;
+        padding: 0 24px 0 24px;
+   }
+   .icon_svg{
+    fill: #00ADEE;
+  }
+  .svg{
+    margin-left: 45%;
+  }
+   .title{
+    color: #333333;
+   }
+   .feature_info{
+    color: #4F4F4F;
+    text-align: center;
+   }
+   span{
+    display: none;
+   }
+
+
+   .company_example{
+    margin-right: 20px;
+    margin-bottom: 10px;
+   }
+
+   .footer_title{
+    font-size: 26px;
+   }
+
+   .ft_content{
+    padding: 0 24px 0 24px;
+    min-height: 988px;
+   }
+   .info_upper_ft{
+    margin-bottom: 475px;
+   }
+
+   .stores{
+    margin: 0;
+    display: flex;
+   }
+   .stores a{
+    margin-right: 5px;
+   }
+
+   .upper_footer{
+    background-image: url(../images/upper_footer.png);
+    background-position: -165px bottom;
+   }
+
+
+   .footer_logo{
+    margin-bottom: 10px;
+   }
+   .footer_help{
+    gap: 18px;
+   }
 }

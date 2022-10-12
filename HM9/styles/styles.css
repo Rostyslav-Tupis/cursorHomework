@@ -1,3 +1,4 @@
+
 body{
     font-family: 'Lato', sans-serif;
     font-weight: 400;
@@ -14,11 +15,13 @@ a{
     margin: 0 auto;
 }
 /* ----------HEADER---------- */
+
+
 .header_container{
     background-image: url(../images/phones.png);
     background-repeat: no-repeat;
     background-position: right;
-    height: 665px;
+    min-height: 665px;
     background-color: #F4F6F9;
 
     display: flex;
@@ -26,6 +29,7 @@ a{
     justify-content: center;
     padding-left: 150px;
 }
+
 .head_logo{
     margin-bottom: 133px;
 }
@@ -46,6 +50,13 @@ a{
     color: #4F4F4F;
     margin-top: 30px;
     margin-bottom: 50px;
+    max-width: 453px;
+}
+.header_stores{
+    margin-right: 36px;
+}
+.head_stores :last-child{
+    margin-right: 0;
 }
 /* -----------SECTION 1----------- */
 .section_content{
@@ -125,7 +136,7 @@ a{
     align-items: center;
     
     position: relative;
-    height: 796px;
+    min-height: 796px;
     background-image: url(../images/circles.png); 
     background-repeat: no-repeat;
     background-position: right;
@@ -180,7 +191,8 @@ a{
 
     background-image: url(../images/bg-section3.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
+    align-items: baseline;
 }
 
 .features_title{ 
@@ -289,13 +301,18 @@ a{
     text-align: center;
 }
 
-.cards_comment{
+
+    
+.all_cards{
+    position: relative;
     display: flex;
     justify-content:center;
     gap: 36px;
     margin-top: 63px;
 }
-    
+.cards_comment{
+    position: relative;
+}
 .btn_arrow_left{
     background: transparent;
     cursor: pointer;
@@ -333,27 +350,30 @@ a{
     display: flex;
     justify-content: center;
 }
+.companies :last-child {
+    margin-right: 0;
+}
+
 .company_example{
     margin-right: 80px;
 }
 
 /* -----------UPPER FOOTER----------- */
 .upper_footer{
-    background-image: url(../images/under_ft_ph.png);
+    background-image: url(../images/upper_footer.png);
     background-repeat: no-repeat;
     background-position: left;
 }
-.img{
-    width: 354px;
-}
+
 .ft_content{
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
+    min-height: 483px;
 }
 
 .info_upper_ft{
-    margin-right: 173px;
+    margin-right: 200px;
 }
 
 .info_sub-title{
@@ -366,8 +386,6 @@ a{
 .stores a {
     margin-right: 36px;
 }
-
-
 
 .footer_container{
     padding: 48px 162px 47px 163px;
