@@ -1,0 +1,188 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   padding-top: 100px;
+   background-image:url(../images/star_sky.jpg) ;
+   height: 300px;
+}
+.box{
+    width: 35px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: black;
+}
+.laser_blue_box{
+    margin-left: auto;
+}
+.laser{ 
+    width: 210px;
+    height: 15px;
+    background-color: rgb(172, 172, 172);
+    border: 1px solid rgb(255, 255, 255);
+    margin-top: 10px;
+    border-radius: 20px;
+    position: relative;
+}
+
+
+.container:hover .laser{
+    animation-play-state: paused;
+    animation-iteration-count: 20;
+    animation-play-state: running;
+}
+
+.container:active .laser{
+    animation-play-state: running;
+}
+
+
+/* ---------------------ANIMATIONS--------------------- */
+
+.laser_green{
+    animation-name: laser-green;
+    animation-duration: 2s;
+    transition: all 0.5s;
+    animation-play-state:paused; 
+    animation-delay: 500ms;
+    box-shadow: rgba(0, 255, 157, 0.692) 0px 8px 24px, rgba(0, 255, 98, 0.596) 0px 16px 56px, rgba(0, 255, 157, 0.562) 0px 24px 80px;
+    background-color: rgb(0, 255, 76);
+    border: rgb(12, 226, 101);
+}
+@keyframes laser-green{
+    0%{
+        top:0;
+        opacity: 1;
+    }
+    100%{
+        top: 35px;
+        opacity: 0;
+    }
+
+}
+
+.laser_blue{
+    animation-name: laser_blue;
+    animation-duration: 2s;
+    transition: all 0.5s;
+    animation-play-state:paused;
+    animation-delay: 500ms;
+    box-shadow: rgba(10, 104, 228, 0.692) 0px 8px 24px, rgba(0, 89, 255, 0.596) 0px 16px 56px, rgba(0, 195, 255, 0.562) 0px 24px 80px;
+    background-color: rgb(13, 104, 240);
+    border: rgb(12, 26, 226);
+}
+@keyframes laser_blue{
+    0%{
+        top: 0;
+    }
+    50%{
+        transform: rotate(40deg)
+    }
+    100%{
+        transform: rotate(40deg)
+    }
+}
+
+
+.laser-red{
+    animation-name: laser-red;
+    animation-duration: 2s;
+    transition: all 0.5s;
+    animation-play-state:paused;
+    animation-delay: 500ms;
+    box-shadow: rgba(228, 10, 75, 0.692) 0px 8px 24px, rgba(255, 0, 43, 0.596) 0px 16px 56px, rgba(255, 0, 34, 0.562) 0px 24px 80px;
+    background-color: rgb(240, 13, 32);
+    border: rgb(226, 12, 101);
+}
+@keyframes laser-red{
+    0%{
+        bottom: 25px;
+    }
+    50%{
+        bottom: 25px;
+        transform: rotate(-40deg)
+    }
+    100%{
+        bottom: 25px;
+        transform: rotate(-40deg)
+    }
+}
+
+/*  */
+.wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 160px;
+
+}
+.wrapper span{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    position: relative;
+    
+}
+
+.wrapper span:first-child{
+    animation-name: circle;
+    animation-duration: 2s;
+    transition: all 0.5s;
+    animation-iteration-count: 1;
+}
+@keyframes circle{
+
+    0%{
+        transform: translate(0px);
+    }
+    25%{
+        transform: translate(-160px , -40px);
+    }
+
+    100%{
+        transform: translate(0px);
+    }
+}
+
+.wrapper span:last-child{
+    animation-name: circle2;
+    animation-duration: 2s;
+    transition: all 0.5s;
+    animation-iteration-count: 1;
+    animation-delay:1.5s;
+}
+@keyframes circle2{
+
+    0%{
+        transform: translate(0px , 0px);
+    }
+    25%{
+        transform: translate(160px , -40px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+
+
+.item1{
+    background: linear-gradient(90deg, rgba(16,103,75,1) 0%, rgba(35,163,112,1) 27%, rgba(0,232,255,1) 54%);
+}
+.item2{
+    background: linear-gradient(90deg, rgba(0,232,255,1) 0%, rgba(0,232,255,1) 38%, rgba(163,35,139,1) 83%);
+}
+.item3{
+    background: linear-gradient(90deg, rgba(163,35,139,1) 26%, rgba(9,255,0,1) 70%, rgba(9,255,0,1) 83%);
+}
+.item4{
+    background: linear-gradient(90deg, rgba(9,255,0,1) 0%, rgba(255,51,0,1) 73%, rgba(255,0,0,1) 100%);
+}
+.item5{
+    background: linear-gradient(90deg, rgba(255,0,0,1) 24%, rgba(149,0,255,1) 63%, rgba(231,0,255,1) 100%);
+}
+.item6{
+    background: linear-gradient(90deg, rgba(231,0,255,1) 38%, rgba(0,99,255,1) 65%);    
+}

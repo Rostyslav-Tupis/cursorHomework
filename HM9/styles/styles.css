@@ -291,6 +291,7 @@ a{
     font-size: 14px;
     line-height: 18px;
     color: #4F4F4F;
+    position: relative;
 }
 
 .footer_title{
@@ -310,22 +311,20 @@ a{
     gap: 36px;
     margin-top: 63px;
 }
-.cards_comment{
-    position: relative;
-}
+
 .btn_arrow_left{
     background: transparent;
     cursor: pointer;
     position: absolute;
     left: 321px;
-    top: 50px;
+    top: 215px;
 }
 .btn_arrow_right{
     background: transparent;
     cursor: pointer;
     position: absolute;
-    top: 50px;
-    right: 316px;
+    top: 216px;
+    right: 313px;
 }
 .btn_hover :hover{
     width: 63px;
