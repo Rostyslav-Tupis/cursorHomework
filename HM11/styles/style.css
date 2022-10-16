@@ -1,0 +1,196 @@
+body{
+    font-style: normal;
+    font-size: 14px;
+}
+*{
+    box-sizing: border-box;
+}
+/* -----------------HEADER----------------- */
+.wrapper::after{
+    content: '';
+    background: #DBDBDB;
+    display: block;
+    height: 1px;
+    width: 100%;    
+    margin-top: 12px;
+}
+
+.header_input{
+    text-align: center;
+    color: #8F8F8F;
+    font-weight: 400;
+
+    background: transparent;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    padding: 6px 50px;
+}
+
+.header_link_icon{
+    margin-right: 22px;
+}
+.header_links :last-child{
+    margin: 0;
+}
+
+.header_links{
+    position: relative;
+}
+
+.direct{
+    position: relative;
+}
+.bg_masseg{
+    position: absolute;
+    left: 13px;
+    top: -14px;
+}
+.number{
+    position: absolute;
+    left: 20px;
+}
+
+.masseges{
+    display: inline-block;
+    position: absolute;
+    left: 177px;
+    top: -4px;
+}
+
+
+/* ----------------MAIN---------------- */
+main{
+    margin-top: 30px;
+}
+.container-lg::after{
+    content: '';
+    background: #DBDBDB;
+    display: block;
+    height: 1px;
+    width: 100%;    
+    margin-top: 55px;
+}
+
+.content01{
+    gap: 40px;
+}
+.interact{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.interact_line{
+    padding-left: 30px; 
+}
+.nickname{
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    color: #262626;
+    margin-right: 23px;
+}
+.follow_btn{
+    font-weight: 700;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 17px;
+    background: #4094EF;
+    border-radius: 3px;
+    border: none;
+    margin-right: 8px;
+
+    padding: 6px 26px;
+}
+.follow_btn:hover{
+    background: #2382e7;
+    transition: 0.2s;
+}
+
+
+.more_info_btn{
+    position: relative;
+    background: transparent;
+    border: none;
+    margin-right: 12px;
+    margin-top: 2px;
+}
+.arrow{
+    position: absolute;
+    top: 14px;
+    left: 16px;
+}
+.dots_info{
+    background: transparent;
+    border: none;
+    margin-bottom: 4px;
+}
+.dot{
+    margin-right: 4px;
+}
+
+.info_profile{
+    margin-bottom: 21px;
+}
+.info_profile:last-child{
+    margin-right: 0;
+}
+.info_profile span {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    color: #262626;
+    margin-right: 40px;
+}
+.info_profile a {
+    text-decoration: none;
+}
+.name{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+}
+.bio{
+    font-size: 17px;
+    line-height: 25px;
+    max-width: 515px;
+}
+.bio_link{
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 21px;
+    color: #133768;
+}
+
+.highlight{
+    display: flex;
+    
+}
+
+.stories{
+    margin-top: 52px;
+    position: relative;
+}
+.story_btn{
+    margin-right: 42px;
+}
+
+
+.hailights_btn{
+    background: transparent;
+    border: none;
+    margin-bottom: 10px;
+    position: relative;
+}
+.border_st{
+    position: absolute;
+    left: 0;
+    top: -3px;
+}
+.btn_name{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+
+/* ------------------CONTENT------------------ */
