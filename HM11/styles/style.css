@@ -35,6 +35,9 @@ body{
 
 .header_links{
     position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
 .direct{
@@ -48,6 +51,7 @@ body{
 .number{
     position: absolute;
     left: 20px;
+    top: -10px;
 }
 
 .masseges{
@@ -169,6 +173,7 @@ main{
 .stories{
     margin-top: 52px;
     position: relative;
+    margin-left: 10.25em;
 }
 .story_btn{
     margin-right: 42px;
@@ -194,3 +199,51 @@ main{
 
 
 /* ------------------CONTENT------------------ */
+.content_photos{
+    margin-top: 20px;
+    position: relative;
+}
+
+.content_btn{
+    background: transparent;
+    border: none;
+    margin-right: 13px;
+    margin-left: 19px;
+    color: #8F8F8F;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+}
+.content_btn:hover{
+    color: #000000;
+    transition: 0.3s;
+}
+.content_btn::before{
+    content: '';
+    height: 1px;
+    width: 68px;
+    display:block;
+    position: absolute;
+    top: -21px;
+    background-color: #000000;
+    opacity: 0;
+    transition: opacity 0.1s linear;
+}
+.content_btn:hover::before{
+    opacity: 1;
+}
+.btn_cont_pic{
+    margin-right: 5px;
+}
+
+
+.content_photo{
+    margin-top: 20px;
+}
+.photos{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+} 
