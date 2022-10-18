@@ -24,7 +24,14 @@ body{
     border: 1px solid #DBDBDB;
     border-radius: 3px;
     padding: 6px 50px;
+
+    background-image: url('../images/header/search_btn.png');
+    background-repeat: no-repeat;
+    background-position: 80px 10px;
 }
+
+
+
 
 .header_link_icon{
     margin-right: 22px;
@@ -46,12 +53,12 @@ body{
 .bg_masseg{
     position: absolute;
     left: 13px;
-    top: -14px;
+    top: -8px;
 }
 .number{
     position: absolute;
     left: 20px;
-    top: -10px;
+    top: -4px;
 }
 
 .masseges{
