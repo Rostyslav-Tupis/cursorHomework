@@ -29,6 +29,9 @@ body{
     background-repeat: no-repeat;
     background-position: 80px 10px;
 }
+.header_input:focus{
+    background-image: none;
+}
 
 
 
