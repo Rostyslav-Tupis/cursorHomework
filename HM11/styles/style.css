@@ -120,6 +120,11 @@ main{
     transition: 0.2s;
 }
 
+.profile_follow:hover{
+    color: #050399;
+    transition: 0.1s;
+}
+
 
 .more_info_btn{
     position: relative;
