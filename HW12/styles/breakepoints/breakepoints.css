@@ -148,4 +148,10 @@
     margin-top: 10px;
     width: 270px;
   }
+  .header_content .header_nav {
+    gap: 9px;
+  }
+  .header_content .header_btn {
+    padding: 8px 20px;
+  }
 }/*# sourceMappingURL=breakepoints.css.map */
