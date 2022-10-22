@@ -28,10 +28,18 @@ header{
             color: #505F98;
             font-size: 14px;
             line-height: 24px;
-            
-            &:hover{
-                color: #424f81;
-                transition: 0.1s;
+
+            &::after{
+                content: '';
+                display: block;
+                width: 100%;
+                height: 2px;
+                background-color: #091133;
+                opacity: 0;
+            }
+            &:hover::after{
+                opacity: 1;
+                transition: 0.8s;
             }
         }
     }
@@ -50,7 +58,7 @@ header{
         border: 2px solid #091133;
         border-radius: 2px;
         border-radius: 2px;
-        padding: 8px 55px 8px 55px;
+        padding: 8px 55px;
         
         &:hover{
             background: #111B47;
@@ -122,7 +130,6 @@ header{
     margin-top: 100px;  
     .section_content{
         display: flex ;
-        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         gap: 30px;
@@ -169,20 +176,19 @@ header{
         }
 }
 
-.section2_img{
-    max-width: 540px;
+// ------------------------ IMAGE SECTION ------------------------
+.img_section{
+    max-width: 100%;
 }
-
-// -------------------- SECTION 3 --------------------
-.section03{
+// -------------------- SECTION 00 --------------------
+.section00{
     padding-top: 120px;
     margin-top: 100px;
     .section_content{
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: 155px;
+        gap: 160px;
     }
 
         .text{
@@ -201,68 +207,21 @@ header{
             line-height: 26px;
         }
 }
-// -------------------- SECTION 4 --------------------
-.section04{
-    padding-top: 120px;
-    margin-top: 100px;
+.sec2{
     .section_content{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
         gap: 100px;
     }
-
-        .text{
-            max-width:445px;
-        }
-        .section_title{
-            font-weight: 500;
-            font-size: 36px;
-            line-height: 48px;
-            color: #091133;
-            margin-bottom: 16px;
-        }
-        .section_info{
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 26px;
-        }
 }
-// -------------------- SECTION 5 --------------------
-.section05{
-    padding-top: 120px;
-    margin-top: 100px;
-    margin-bottom: 125px;
+.sec3{
+    margin-bottom: 140px;
     .section_content{
-        display: flex ;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 185px;
+        gap: 194px;
     }
-
-        .text{
-            max-width: 445px;
-        }
-        .section_title{
-            font-weight: 500;
-            font-size: 36px;
-            line-height: 48px;
-            color: #091133;
-            margin-bottom: 16px;
-        }
-        .section_info{
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 26px;
-        }
 }
-
-.sec5_btn{
+.sec3_btn{
     margin-top: 40px;
 }
-.section5_btn{
+.purchase_btn{
     font-weight: 500;
     font-size: 14px;
     line-height: 24px;
@@ -279,13 +238,13 @@ header{
     }
 }
 
-
-
 // -------------------- PRICE SECTION --------------------
 .price_section{
     padding-top: 235px;
     padding-bottom: 165px;
     background-image: url('../images/price_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .content{
     display: flex;
@@ -337,7 +296,7 @@ header{
         line-height: 24px;
         text-align: center;
         color: #5D6970;
-        margin-bottom: 10px;
+        margin-bottom: 13px;
     }
 
     .buy_now {
@@ -360,9 +319,7 @@ header{
     }
 }
 
-footer{
-    height: 216px;
-
+footer{ 
     background: #E7ECFF;
 }
 
@@ -385,21 +342,7 @@ footer{
             color: #37447E;
         }
         .top_ft_btn{
-            align-self: center;
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 18px;
-            color: #091133;
-
-            border: 2px solid #091133;
-            border-radius: 2px;
-            padding: 6px 25px;
-
-            &:hover{
-                background: #111B47;
-                color: #fff;
-                transition: 0.2s;
-            }
+            padding: 5px 25px;
         }
 }
 
@@ -427,9 +370,17 @@ footer{
             line-height: 24px;
             color: #929ECC;
 
-            &:hover{
-                color: #8590b9;
-                transition: 0.2s;
+            &::after{
+               content:'';
+               display: block;
+               height: 2px;
+               width: 100%;
+               background-color:  #929ECC;
+               opacity: 0;
+            }
+            &:hover::after{
+                opacity: 1;
+                transition: 0.7s;
             }
         }
     }

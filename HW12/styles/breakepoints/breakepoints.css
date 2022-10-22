@@ -1,0 +1,151 @@
+@media screen and (max-width: 1400px) {
+  .price_section {
+    background-size: auto;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .section00 .section_content {
+    gap: 110px;
+  }
+  .sec2 .section_content {
+    gap: 50px;
+  }
+  .sec3 .section_content {
+    gap: 145px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .wrapper {
+    background-position: 85px;
+  }
+  .section00 .section_content {
+    gap: 30px;
+  }
+  .sec3 .section_content {
+    gap: 115px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .wrapper {
+    background-position: 190px;
+  }
+  .section2 .section_content {
+    gap: 0;
+  }
+  .section2 .section_title {
+    font-size: 30px;
+  }
+  .section2 .section_info {
+    font-size: 15px;
+  }
+  .section00 .text {
+    max-width: 375px;
+  }
+  .section00 .section_title {
+    font-size: 30px;
+  }
+  .section00 .section_info {
+    font-size: 15px;
+  }
+  .purchase_btn {
+    padding: 7px 40px;
+  }
+}
+@media screen and (max-width: 652px) {
+  .header_content .header_nav {
+    gap: 20px;
+  }
+  .header_content .header_btn {
+    padding: 8px 40px;
+  }
+  .section2 {
+    margin-top: 0;
+  }
+  .section1_text {
+    text-align: center;
+    max-width: 100%;
+  }
+  .section1_text .section1_title {
+    font-size: 42px;
+  }
+  .section1_text .section1_info {
+    font-size: 16px;
+  }
+  .section1_text .purchase_btn {
+    padding: 8px 26px;
+  }
+  .section1_text .learn_btn {
+    padding: 8px 40px;
+  }
+  .section2 .section_content {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .section00 {
+    padding-top: 120px;
+    margin-top: 40px;
+    text-align: center;
+  }
+  .section00 .section_content {
+    flex-wrap: wrap;
+  }
+  .section00 .text {
+    order: -1;
+  }
+  .content .title_price {
+    font-size: 32px;
+  }
+  .content .info_price {
+    font-size: 14px;
+  }
+  .content .price {
+    font-size: 43px;
+  }
+  .content .under_price {
+    font-size: 14px;
+  }
+  .top_footer .top_ft_btn {
+    padding: 5px 20px;
+  }
+  .bottom_footer {
+    flex-flow: column;
+    align-items: center;
+  }
+  .bottom_footer .ft_social {
+    margin-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .section1_btn {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    gap: 20px;
+  }
+  .section1_text .purchase_btn {
+    margin-right: 0;
+    width: 300px;
+    align-self: center;
+  }
+  .section1_text .learn_btn {
+    width: 300px;
+    align-self: center;
+  }
+  .info {
+    display: none;
+  }
+  .top_footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .top_footer .ft_logo {
+    text-align: center;
+  }
+  .top_footer .top_ft_btn {
+    text-align: center;
+    margin-top: 10px;
+    width: 270px;
+  }
+}/*# sourceMappingURL=breakepoints.css.map */
