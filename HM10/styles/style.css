@@ -114,56 +114,71 @@ body{
 
 /*  */
 .wrapper{
+    position: absolute;
+    margin-top: 150px;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border-top:4px solid#fff;
     display: flex;
-    justify-content: center;
-    margin-top: 160px;
-
 }
 .wrapper span{
-    width: 90px;
-    height: 90px;
-    border-radius: 100%;
     position: relative;
+    display: block;
+    width: 2px ;
+    height: 100px;
+    background: #fff;
+    margin: 0 34px;
+    transform-origin:top ;
+
     
 }
+.wrapper span::before{
+    content: '';
+    position: absolute;
+    bottom: 0 ;
+    left: -14px;
+    width: 70px;
+    height: 70px;
+    background: black;
+    border-radius: 50%;
 
+}
 .wrapper span:first-child{
     animation-name: circle;
-    animation-duration: 2s;
-    transition: all 0.5s;
-    animation-iteration-count: 1;
+    animation: circle 1s linear infinite;
 }
 @keyframes circle{
-
     0%{
-        transform: translate(0px);
+        transform: rotate(0deg);
     }
     25%{
-        transform: translate(-160px , -40px);
+        transform: rotate(60deg);
     }
-
+    50%{
+        transform: rotate(0deg);
+    }
     100%{
-        transform: translate(0px);
+        transform: rotate(0deg);
     }
 }
 
 .wrapper span:last-child{
-    animation-name: circle2;
-    animation-duration: 2s;
-    transition: all 0.5s;
-    animation-iteration-count: 1;
-    animation-delay:1.5s;
+    animation-name: animation2;
+    animation:  animation2 1s linear infinite;
+    animation-delay: 0.5s;
 }
-@keyframes circle2{
-
+@keyframes animation2{
     0%{
-        transform: translate(0px , 0px);
+        transform: rotate(0deg);
     }
     25%{
-        transform: translate(160px , -40px);
+        transform: rotate(-60deg);
+    }
+    50%{
+        transform: rotate(0deg);
     }
     100%{
-        transform: translate(0px);
+        transform: rotate(0deg);
     }
 }
 
