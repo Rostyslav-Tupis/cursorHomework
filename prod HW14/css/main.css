@@ -170,7 +170,7 @@ button {
 .main-screen {
     min-height: 1px;
     height: 700px;
-    background-image: url("../img/main-screen-bg.jpg");
+    background-image: url("../img/main-screen-bg.webp");
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -334,7 +334,8 @@ button {
 
 .reasons .reason .square {
     text-align: center;
-    height: 70px;
+    height: 65px;
+    width: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -345,6 +346,31 @@ button {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+}
+.bg-reason1{
+    width: 55px; 
+    height: 34px;
+    background: url('../img/css_sprites.png') ;
+    background-position: -143px -75px;
+    margin:  0 auto;
+}
+.bg-reason2{
+    width: 45px; height: 45px;
+    background: url('../img/css_sprites.png') ;
+    background-position: -71px -83px;
+    margin:  0 auto;
+}
+.bg-reason3{
+    width: 45px; height: 45px;
+    background: url('../img/css_sprites.png') ;
+    background-position: 0px -158px;
+    margin:  0 auto;
+}
+.bg-reason4{
+    width: 45px; height: 45px;
+    background: url('../img/css_sprites.png') ;
+    background-position: -9px -82px;
+    margin:  0 auto;
 }
 
 .reasons .reason .square img {
@@ -447,6 +473,11 @@ button {
     margin: 50px auto;
 }
 
+
+
+
+
+
 .reviews .review-text {
     display: inline-block;
     width: calc(70% - 15px);
@@ -469,8 +500,44 @@ button {
     text-align: right;
     margin: 10px 0 auto 0;
     vertical-align: top;
-    padding-top: 15px;
+    padding: 15px 5px;
+    display: flex;
+justify-content: end;
 }
+
+.slick-prev{
+    width: 25px;
+    height: 62px;
+    background: url(../img/arrow-left.png) 0 0 no-repeat;
+    top: 35%;
+    left: -30%;
+
+}
+.slick-prev:hover{
+    background: url(../img/arrow-left.png) 0 0 no-repeat;
+}
+
+.slick-next::before{
+    display: none;
+}
+.slick-prev:before {
+    display: none;
+ }
+
+ .slick-next{
+    width: 25px;
+    height: 65px;
+    background: url(../img/arrow-right.png) 0 0 no-repeat;
+    top: 35%;
+    right: -30%;
+ }
+ .slick-next:hover{
+    background: url(../img/arrow-right.png) 0 0 no-repeat;
+}
+.slick-next:before {
+    display: none;
+ }
+
 
 .reviews .review-author > * {
     vertical-align: top;
@@ -480,6 +547,11 @@ button {
     position: relative;
     top: -15px;
     margin-right: 10px;
+}
+.customer{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
 }
 
 .delivery .h2 {

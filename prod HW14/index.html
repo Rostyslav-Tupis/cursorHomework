@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/screen.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./css/preloader.css">
 </head>
 <body>
+    <div id="page-preloader" class="preloader">
+        <div class="loader"></div>
+    </div> 
 <header>
     <div class="wrapper">
         <img src="img/logo.png" alt="Logo Avtoparktronik" class="logo">
@@ -29,7 +38,7 @@
             <button class="btn-order">Заказать</button>
         </div>
         <div class="right-block">
-            <img src="img/product.png" alt="" class="main-image">
+            <img src="img/product.webp" alt="" class="main-image">
             <div class="price">
                 <div class="old-price">6999 грн.</div>
                 <div class="new-price">3999 грн.</div>
@@ -104,24 +113,24 @@
             причины <span class="yellow">купить видеопарктроник</span> у нас
         </h2>
         <div class="reason">
-            <div class="square">
-                <img src="img/reason1.png" alt="" class="width60">
+            <div class="square bg-reason1">
+                
             </div>
             <h4 class="h4">Быстрый и легкий монтаж</h4>
             <div class="reason-text">Зеркало с монитором крепится поверх штатного и не требует дополнительных установок.
             </div>
         </div>
         <div class="reason">
-            <div class="square">
-                <img src="img/reason2.png" alt="">
+            <div class="square bg-reason2">
+                
             </div>
             <h4 class="h4">Стоимость</h4>
             <div class="reason-text">Цена видеопарктроника у дилера от 19990 грн.Наша цена всего 3990 грн.
             </div>
         </div>
         <div class="reason">
-            <div class="square">
-                <img src="img/reason3.png" alt="" class="width35">
+            <div class="square bg-reason3">
+               
             </div>
             <h4 class="h4">Экономия</h4>
             <div class="reason-text">В случае наезда на препятствие при движении задним ходом, стоимость ремонта бампера
@@ -129,8 +138,8 @@
             </div>
         </div>
         <div class="reason">
-            <div class="square">
-                <img src="img/reason4.png" alt="">
+            <div class="square bg-reason4">
+                
             </div>
             <h4 class="h4">Безопасность для пешеходов</h4>
             <div class="reason-text">при движении задним ходом (угол обзора нашей камеры 170 градусов)
@@ -150,16 +159,16 @@
         <div class="left-block">
             <p>ремонт бампера стоит от</p>
             <p class="cost"><span class="yellow">6000</span> рублей</p>
-            <img src="img/girl-in-car.jpg" alt="" class="full-width">
+            <img src="img/girl-in-car.webp" alt="" class="full-width">
             <img src="img/broken-car1.jpg" alt="" class="half-width">
-            <img src="img/broken-car2.jpg" alt="" class="half-width">
+            <img src="img/broken-car2.webp" alt="" class="half-width">
         </div>
         <div class="right-block">
             <p>Видеопарктроник с подарком стоит</p>
             <p class="cost"><span class="yellow">3990</span> рублей</p>
-            <img src="img/product.jpg" alt="" class="full-width small-height-fix">
+            <img src="img/product13.webp" alt="" class="full-width small-height-fix">
             <span class="plus yellow">+</span>
-            <img src="img/gift.jpg" alt="" class="full-width">
+            <img src="img/gift.webp" alt="" class="full-width">
         </div>
         <button class="btn-order centred">Заказать</button>
     </div>
@@ -167,30 +176,37 @@
 <section class="reviews">
     <div class="wrapper">
         <h2 class="h2">отзывы о нашем <span class="yellow">видеопарктронике</span></h2>
-        <img src="img/arrow-left.png" alt="" class="arrow-left">
-        <div class="review-slider">
-            <div class="slide">
-                <img src="img/review1.jpg" alt="" class="main-review-img">
-                <p class="review-text">
-                    Опять долгие ночи в интернете в поисках обзоров и сравнений… Проблема таких устройств что у них либо
-                    дизайн
-                    уродский огромный — в полтора раза больше штатного, а я вообще не люблю заднее зеркало, так как за 3
-                    года
-                    вождения рабочих "каблучков" типа Кангу и Берлинго вообще привык без него обходится, либо тех.
-                    данные
-                    никакие — камеры очень плохого качества… Уже думал что печаль… :( Но вот за пару дней поисков
-                    наткнулся на
-                    то о чем мечтал действительно — HD Recorder. Нашел его у одного из драйвечан, и у других. Все в
-                    восторге от
-                    данного устройства. Качество видео очень хорошее, в машине не видно его вообще, крепления на штатное
-                    зеркало
-                    любой машины, вообщем то что доктор прописал!
-                </p>
-                <div class="review-author"><img src="img/review1-ava.jpg" alt="" class="ava"><b>Константин</b><i>г.
-                    Днепропетровск</i></div>
+            <div class="review-slider">
+                <div class="slide">
+                    <img src="img/review1.webp" alt="" class="main-review-img">
+                    <p class="review-text">
+                        Опять долгие ночи в интернете в поисках обзоров и сравнений… Проблема таких устройств что у них либо
+                        дизайн
+                        уродский огромный — в полтора раза больше штатного, а я вообще не люблю заднее зеркало, так как за 3
+                        года
+                        вождения рабочих "каблучков" типа Кангу и Берлинго вообще привык без него обходится, либо тех.
+                        данные
+                        никакие — камеры очень плохого качества… Уже думал что печаль… :( Но вот за пару дней поисков
+                        наткнулся на
+                        то о чем мечтал действительно — HD Recorder. Нашел его у одного из драйвечан, и у других. Все в
+                        восторге от
+                        данного устройства. Качество видео очень хорошее, в машине не видно его вообще, крепления на штатное
+                        зеркало
+                        любой машины, вообщем то что доктор прописал!
+                    </p>
+                    <div class="review-author"><img src="img/review1-ava.jpg" alt="" class="ava"><b>Константин</b><i>г.
+                        Днепропетровск</i></div>
+                </div>
+                <div class="slide">
+                    <img src="img/another_comment_car.webp" alt="" class="main-review-img">
+                    <p class="review-text">
+                        Качество видео очень хорошее, в машине не видно его вообще, крепления на штатное
+                        зеркало любой машины, вообщем то что доктор прописал!
+                    </p>
+                    <div class="review-author"><img src="img/customer.webp" alt="" class="ava customer"><b>Василь</b><i>г.
+                        Київ</i></div>
+                </div>
             </div>
-        </div>
-        <img src="img/arrow-right.png" alt="" class="arrow-right">
     </div>
 </section>
 <section class="delivery">
@@ -240,14 +256,14 @@
         </div>
     </div>
 </section>
-<seciton class="last-screen">
+<section class="last-screen">
     <div class="wrapper">
         <h2 class="h2">закажите свой видеопарктроник <span class="yellow">до конца дня</span>
             И <span class="yellow">получите в подарок</span> антибликовое стекло</h2>
         <div class="left-block">
             <img src="img/product-reverse.jpg" alt="">
             <span class="plus">+</span>
-            <img src="img/gift-reverse.jpg" alt="">
+            <img src="img/gift-reverse.webp" alt="">
             <div class="price">
                 <div class="old-price">6999 грн.</div>
                 <div class="new-price">3999 грн.</div>
@@ -262,13 +278,14 @@
             </form>
         </div>
     </div>
-</seciton>
+</section>
 <footer>
     <div class="wrapper">
 
     </div>
 </footer>
 <script src="lib/plugins.js"></script>
+<script src="./js/preloader.js"></script>
 <script>
     // 2. This code loads the IFrame Player API code asynchronously.
     var tag = document.createElement('script');
@@ -310,6 +327,16 @@
     function stopVideo() {
         player.stopVideo();
     }
+</script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $('.review-slider').slick({
+        infinite: true,
+        dots: true,
+        arrows: true,
+        slidesToScroll: 1,
+        speed: 500,
+    });
 </script>
 </body>
 </html>
