@@ -57,12 +57,13 @@ document.writeln(`<p>` ,`Сума решти ${sumBack}` , `</p>`);
 //task 8 Середнє значення цін ------------------------
 let product = [ bread , apples , rice ] ; 
 
-const average = product.reduce((a, b) => a + b, 0) / product.length;
+// const average = product.reduce((a, b) => a + b, 0) / product.length;
 
-// * let avg  = sum / 3 ;  = 76.62583333333333
-console.log(`Середнє значення цін ${average.toFixed(2)}`);
+let avg  = sum / 3 ; ;
 
-document.writeln(`<p>` ,`Середнє значення цін ${average.toFixed(2)}` , `</p>`);
+console.log(`Середнє значення цін ${avg.toFixed(2)}`);
+
+document.writeln(`<p>` ,`Середнє значення цін ${avg.toFixed(2)}` , `</p>`);
 
 
 // task 9 Випадкова знижка ------------------------
@@ -77,3 +78,21 @@ console.log(`Випадкова знижка ${customDiscount.toFixed(0)}%`);
 document.writeln(`<p>Випадкова знижка : ${customDiscount.toFixed(0)}% </p>`);
 
 // task 10 ------------------------
+
+let discont = ( wholeAmount * (customDiscount/100)) ; 
+
+let discontPrice = (wholeAmount - discont );
+
+console.log("Ціна з урахуванням знижки",  discontPrice.toFixed(2));
+
+document.writeln(`<p>Ціна з урахуванням знижки  : ${discontPrice.toFixed(2)} </p>`);
+
+// task 11 ------------------------
+
+let value = wholeAmount / 2 ; //114
+
+let netProfit = discontPrice - value  ; 
+
+console.log("Чистий прибуток",netProfit);
+document.writeln(`<p>Чистий прибуток  : ${netProfit.toFixed(2)} </p>`);
+
