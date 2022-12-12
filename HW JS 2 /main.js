@@ -19,11 +19,9 @@ let sum = 0 ;
 якщо значення false то виконується else (коментар для себе)*/
 if(conf) {
     for(i = n; i <= m; i++) {
-      if(i % 2 === 0) {
+      if(i % 2 === 1) { //якщо виходить не парне число тоді ми його добавляємо до суми 
         sum += i
-      } else {
-        sum += 0
-      }
+      } 
     }
   } else {
     for(i = n; i <= m; i++) {
@@ -31,6 +29,8 @@ if(conf) {
     }
   }
 
-  
 document.writeln(`<p>Сума чисел : ${sum} </p>`);
 console.log(n , m , sum , conf);
+
+
+let arr = [];
