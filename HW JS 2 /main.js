@@ -6,9 +6,14 @@ while (isNaN(n) || !Number.isInteger(n)){
 }
 
 let m = Number(prompt("Type second number:"));
-while (isNaN(m) || !Number.isInteger(m)){
+while (isNaN(n) || !Number.isInteger(n)){
     alert("Please type integer number");
     m =  Number(prompt("Type any number:"));
+}
+
+while (n > m ){
+  alert("Second number MUST be a higher");
+  m = Number(prompt("Type again:"));
 }
 
 let conf = confirm("Do you want to skip even numbers ? ")

@@ -11,10 +11,10 @@ function getMaxDigit(number){
 //---------------------------------------------------------------------------------
 // Функція №2 
 function toPower (number , power){
-    result = number ; //2
+    result = number ;
 
     for(let i = 0 ; i < power - 1  ; i++){
-        result = result * number ; //2*2 = resut ==4 ; result * number == 2 ; 4 * 2 
+        result = result * number ; 
     }
     return result ; 
 
@@ -93,6 +93,21 @@ function convertCurrency (money){
 }
 // console.log(convertCurrency(value));
 
+//!--------------------------------------------------------------------------------
+//!функція 9 , 10 passWord = Math.random().toString().substr(2, 8)
+function getRandomPassword( passLenght = 8 ){
+    let passWord = ""; 
+
+    min = 1 ; 
+    max = 10 ; 
+    
+    for ( let i = 0 ; i < passLenght  ; i++){
+        passWord = passWord.toString() + Math.floor(Math.random() * (max - min) + min); // навіщо добавляти стрінгу до passWord ?
+    }
+    return passWord ; 
+}
+
+console.log(getRandomPassword(8));
 //--------------------------------------------------------------------------------
 //функція 11
 function deleteLetters(letter , word){
@@ -127,8 +142,9 @@ document.writeln(`<p>Функція №1 - Найбільша цифра у чи
 document.writeln(`<p>Функція №2 (4 в 4 ступені): ${ toPower(4 , 4)}</p>`);
 document.writeln(`<p>Функція №3 iHoR : ${correctName('iHoR')} </p>`);
 document.writeln(`<p>Функція №4  : ${percentageOfSalary(percent , salary )} </p>`);
-document.writeln(`<p>Функція №5 рандомне числр  : ${getRandomNumber(min , max )} </p>`);
+document.writeln(`<p>Функція №5 рандомне число  : ${getRandomNumber(min , max )} </p>`);
 document.writeln(`<p>Функція №6 букв 'a' у слові 'abracadabra' : ${countLetter('a' , 'abracadabra' )} </p>`);
 document.writeln(`<p>Функція №7, 8 (1150$ в UAH)  : ${convertCurrency("1150$")} </p>`);
+document.writeln(`<p>Функція №9 , 10  : ${(getRandomPassword(8))} </p>`);
 document.writeln(`<p>Функція №11 : ${deleteLetters("a" ,"ababalang" )} </p>`);
 document.writeln(`<p>Функція №12 : ${isPalyndorm("madam")} </p>`);
