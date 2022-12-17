@@ -32,5 +32,3 @@ if(conf) {
 document.writeln(`<p>Сума чисел : ${sum} </p>`);
 console.log(n , m , sum , conf);
 
-
-let arr = [];
