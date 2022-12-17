@@ -80,10 +80,10 @@ word = 'abracadabra';
 function convertCurrency (money){
 
     if(money[money.length -1 ] == "$"){ //в квадратних дужка записуємо індекс під яким буде стояти символ чи буква 
-        return +money.slice( 0 , money.length -1) * 36 ; 
+        return +money.slice( 0 , money.length -1) * 39 ; 
 
     } else if (money.slice(money.length - 3, money.length).toUpperCase() == "UAH"){//slice повертає (залишає) те що вирізалося інше відкидається
-        return +money.slice( 0 , money.length -3) / 36 ; 
+        return +money.slice( 0 , money.length -3) / 39 ; 
 
     }else {
         alert('Wrong input');
