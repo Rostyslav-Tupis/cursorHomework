@@ -102,7 +102,7 @@ function getRandomPassword( passLenght = 8 ){
     max = 10 ; 
     
     for ( let i = 0 ; i < passLenght  ; i++){
-        passWord = passWord.toString() + Math.floor(Math.random() * (max - min) + min); // навіщо добавляти стрінгу до passWord ?
+        passWord = passWord.toString() + Math.floor(Math.random() * (max - min) + min);
     }
     return passWord ; 
 }
