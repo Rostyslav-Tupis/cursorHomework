@@ -1,12 +1,12 @@
 
 let n = Number(prompt("Type first number:"));
-while (isNaN(n) || !Number.isInteger(n)){
-    alert("Please type integer number");
+while (isNaN(n) || !Number.isInteger(n) || n <= 0) {
+    alert("Please type correct number");
     n =  Number(prompt("Type any number:"));
 }
 
 let m = Number(prompt("Type second number:"));
-while (isNaN(n) || !Number.isInteger(n)){
+while (isNaN(m) || !Number.isInteger(m)){
     alert("Please type integer number");
     m =  Number(prompt("Type any number:"));
 }
