@@ -102,9 +102,9 @@ function getRandomPassword( passLenght = 8 ){
     max = 10 ; 
     
     for ( let i = 0 ; i < passLenght  ; i++){
-        passWord = passWord.toString() + Math.floor(Math.random() * (max - min) + min);
+        passWord = passWord + Math.floor(Math.random() * (max - min) + min);
     }
-    return passWord ; 
+    return passWord; 
 }
 
 console.log(getRandomPassword(8));
