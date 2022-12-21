@@ -96,7 +96,7 @@ function convertCurrency (money){
 //!--------------------------------------------------------------------------------
 //!функція 9 , 10 passWord = Math.random().toString().substr(2, 8)
 function getRandomPassword( passLenght = 8 ){
-    let passWord = ""; 
+    let passWord = ""; // створили пусту стрінгу 
 
     min = 1 ; 
     max = 10 ; 
