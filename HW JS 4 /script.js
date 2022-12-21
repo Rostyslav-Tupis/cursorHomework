@@ -43,7 +43,7 @@ function getStudentsAndThemes (pairs ,themes ){
 
 }
 const pairsAndTheme = getStudentsAndThemes (pairs ,themes );
-console.log(pairsAndTheme) ;
+console.log(pairsAndTheme);
 
 //----------------------------------------------------------------------------------------------------------
 
