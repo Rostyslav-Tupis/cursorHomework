@@ -29,7 +29,7 @@ function getPairs (students){
 const pairs = getPairs (students);
 console.log(pairs);
 
-//----------------------------------------------------------------------------------------------------------
+//! ----------------------------------------------------------------------------------------------------------
 
 function getStudentsAndThemes (pairs ,themes ){
 
@@ -42,6 +42,7 @@ function getStudentsAndThemes (pairs ,themes ){
     return pairsAndThemes ;
 
 }
+
 const pairsAndTheme = getStudentsAndThemes (pairs ,themes );
 console.log(pairsAndTheme);
 
@@ -61,16 +62,18 @@ console.log(marksForStudents);
 
 //----------------------------------------------------------------------------------------------------------
 
-function getRandomMarks (pairsAndTheme){
+// console.log(studentsAndMarksAndThemes)
 
-    for (let i = 0 ; i < pairsAndTheme.length ; i++){
+function getRandomMarks (pairsAndTheme){
+    let studentsAndMarksAndThemes = JSON.parse(JSON.stringify(pairsAndTheme));;
+    for (let i = 0 ; i < studentsAndMarksAndThemes.length ; i++){
 
         let ramdomMark = Math.floor(Math.random() * 5) + 1 ; 
 
-        pairsAndTheme[i].push(ramdomMark)
+        studentsAndMarksAndThemes[i].push(ramdomMark)
     }
 
-    return pairsAndTheme;
+    return studentsAndMarksAndThemes;
 }
 const randomMark = getRandomMarks (pairsAndTheme);
 console.log(randomMark);
