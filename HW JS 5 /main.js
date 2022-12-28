@@ -12,10 +12,6 @@ function getRandomArray(length, min , max){
 }
 console.log("Функція 1:" ,getRandomArray( 10 , 1 , 100));
 
-// Funtion #2 ------------------------------------------------------------
-
-
-
 // Funtion #3 ------------------------------------------------------------
 function getAverage(...numbers) { 
     let sum = 0 ; 
@@ -134,8 +130,3 @@ function divideByThree(words) {
     return result
 }
 console.log("Функція 9:" ,divideByThree("ababalagan"));
-
-// Funtion #10 ------------------------------------------------------------
-const generateCombinations = (word) => {
-
-}
