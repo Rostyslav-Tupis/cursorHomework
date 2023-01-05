@@ -46,42 +46,62 @@ console.log("Функція 4:" ,getMedian(1, 2, 3, 4));
 
 // Funtion #5 ------------------------------------------------------------
 const filterEvenNumbers = (...numbers) => {
-    let evenNumbers = []; 
 
-    for (let digit of numbers){
-        if (digit % 2 == 1 ){
-            evenNumbers.push(digit)
-        }
-    }
-    return evenNumbers;
+    let evenNumbers = numbers.filter(function(number){
+        return number % 2 == 1
+    }); 
+    return evenNumbers
+
+    //! метод через цикл
+    // let evenNumbers = [];
+    // for (let digit of numbers){
+    //     if (digit % 2 == 1 ){
+    //         evenNumbers.push(digit)
+    //     }
+    // }
+    // return evenNumbers;
 }
 
 console.log('Функція 5: ' , filterEvenNumbers(1, 2, 3, 4, 5, 6));
 
 // Funtion #6 ------------------------------------------------------------
 const countPositiveNumbers = (...numbers) => {
-    let counter = 0 ; 
+    let counter = 0 ;
+    numbers.filter(function(number){
+       if(number > 0){
+        counter +=1 ;
+       } 
+         
+    })
+    return counter
+    
+    //! метод через цикл
+    // let counter = 0 ; 
 
-    for (let digit of numbers){
-        if(digit > 0){
-            counter += 1 ; 
-        }
-    }
-    return counter ; 
+    // for (let digit of numbers){
+    //     if(digit > 0){
+    //         counter += 1 ; 
+    //     }
+    // }
+    // return counter ; 
     
 }
 
 console.log("Функція 6:" ,countPositiveNumbers(1, -2, 3, -4, -5, 6));
 // Funtion #7 ------------------------------------------------------------
 const getDividedByFive = (...numbers) =>{
-    let number = [];
+    let dividedFiveNumbers = numbers.filter(function(number){
+        return number % 5 == 0 ;
+    });
+    return dividedFiveNumbers;
 
-    for (let digit of numbers){
-        if(digit % 5 == 0){
-            number.push(digit)
-        }
-    }
-    return number ;
+    //! метод через цикл
+    // for (let digit of numbers){
+    //     if(digit % 5 == 0){
+    //         number.push(digit)
+    //     }
+    // }
+    // return number ;
 }
 console.log("Функція 7:" , getDividedByFive(6, 2,55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2));
 
