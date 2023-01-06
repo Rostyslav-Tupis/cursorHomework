@@ -33,9 +33,7 @@ function getTotalTaxes (){
 
 // function #4 ----------------------------------------
 function getMySalary (country){
-    let minSal = 1500; 
-    let maxSal = 2000;
-    let myRandomSalary = Math.floor(Math.random() * (minSal - maxSal) + maxSal) ; 
+    let myRandomSalary = Math.floor(Math.random() * (1500 - 2000) + 2000) ; 
     
     let profit = 0 ; 
     // profit = (myRandomSalary - (country.tax * myRandomSalary).toFixed()) ;
