@@ -41,7 +41,7 @@ function getMySalary (country){
 
     let info = {};
     info["salary"] = myRandomSalary;
-    info["taxes"] = country.tax;
+    info["taxes"] = getMyTaxes.call(country, myRandomSalary);
     info["profit"] = profit;
 
     console.log('Function 4:' , info)
