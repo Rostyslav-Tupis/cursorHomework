@@ -18,12 +18,6 @@ document.addEventListener("DOMContentLoaded" , function(){
         }
     }
     generateBlocks();
-    
-    // let button = document.createElement('button'); спроба зробити запуск generateBlocksInterval через кноку 
-    // Object.assign(button.style,{width:"300px" , height:"50px" ,display:"inline-block" ,backgroundColor: "aqua" , marginTop: "10px" , borderRadius:'15px'});
-    // button.innerText = "Start generate colors"
-    // document.getElementById("wrap").append(button);
-
 
     function generateBlocksInterval(){
         document.querySelectorAll('.block').forEach((elem) => {
