@@ -1,0 +1,145 @@
+body{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 26px;
+}
+*{
+    box-sizing: border-box;
+}
+/*------------------------------------------------------------------------------------------------*/
+.wrapper{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.3)) , url(../bg/starWars_BG_1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.hide{
+    display: none !important;
+}
+.search_zone{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+}
+
+.inputFill{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 15px;
+    padding: 15px 40px;
+    text-align: center;
+    cursor: pointer;
+    width:auto;
+    border: none;
+    border-radius: 10px;
+    background: rgb(0, 0, 0, 0.8);
+    box-shadow: 0 10px 40px 2px rgb(255, 255, 255);
+    color: #fff;
+}
+.inputFill:focus{
+    outline: none;
+}
+
+.serach_btns{
+    font-family: 'Orbitron', sans-serif;
+    color: yellow;
+    padding: 8px 40px;
+    border-radius: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 7px 40px 1px rgb(255, 255, 255);
+    font-weight: 900;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+.serach_btns:hover{
+    background-color: rgba(255, 255, 0, 0.802);
+    border: 2px solid rgba(255, 255, 0, 0);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 10px 50px 1px rgba(255, 255, 0, 0.695);
+}
+/*------------------------------------------------------------------------------------------------*/
+.error_alert{
+    padding: 10px;
+    align-self: center;
+    font-size: 36px;
+    border: 2px solid white;
+    font-weight: 900;
+    background-color: rgba(4, 3, 3, 0.5);
+    color: rgb(255, 255, 255);
+}
+#characters{
+    margin-top: 20px;
+    color:#fff;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+    gap: 25px;
+}
+/*------------------------------------------------------------------------------------------------*/
+.info{
+    width: 300px;
+    height: 410px;
+    border: 3px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.name{
+    margin:0 0 10px 0;
+    font-weight: 800;
+}
+.years{
+    color: red;
+    margin-bottom: 5px;
+}
+.gender{
+    margin-bottom: 5px; 
+}
+.allInfo{
+    margin-top: 10px;
+    margin-left: 23px;
+}
+.image{
+    margin-top: 10px;
+    align-self: center;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+/*------------------------------------------------------------------------------------------------*/
+.back{
+    align-self: start;
+    padding: 5px 25px;
+    font-size: 22px;
+    background:none;
+    border: 1px solid white;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+
+.planets{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.nameOfPlanet{
+    color: #fff;
+}
