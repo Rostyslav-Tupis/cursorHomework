@@ -16,13 +16,22 @@
     <div class="wrapper" id="wrapper">
         <div class="container">
             <form action="" class="search_zone">
-                <input type="number" placeholder="Characters from film #1" class="inputFill" maxlength="1">
+                <input type="number" placeholder="Character from film #1" class="inputFill" maxlength="1">
                 <button type="button" onclick="getCharacterFromFlim(reviceCharacter)" class="serach_btns">Lets search</button>
             </form>
         </div>
         <div  id="characters">
         </div>
-        <div class="planets"></div>
+        <div class="control">
+            <h3 class="title">Planets</h3>
+            <p class="hint">to show planets click "next"</p>
+            <div class="buttons">
+                <button id="planets-previous" class="serach_btns control-btn" type="button" onclick="pagePreviousPlanets()">Previous</button>
+                <button id="planets-next" class="serach_btns control-btn" type="button" onclick="pageNextPlanets()">Next</button>
+            </div>
+            <div class="slider_planets"></div>
+        </div>
+        <div class="overlay"><h2 class="overlay-text">Loading...</h2></div>
     </div>
     <script src="./scripts/main.js"></script>
 </body>

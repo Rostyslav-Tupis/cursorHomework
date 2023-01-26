@@ -1,31 +1,32 @@
-body{
+body , html{
+    height: 100%;
     font-family: 'Orbitron', sans-serif;
     font-size: 26px;
+    background-color: black;
 }
 *{
     box-sizing: border-box;
 }
 /*------------------------------------------------------------------------------------------------*/
 .wrapper{
-    height: 100vh;
+    min-height: 100%;
+    height: auto;
     background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.3)) , url(../bg/starWars_BG_1.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
     padding: 0 15px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: space-around;
+
 }
 .container{
+    margin-top: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 80px;
-}
-.hide{
-    display: none !important;
+    margin-bottom: 30px;
 }
 .search_zone{
     margin-left: 30px;
@@ -37,8 +38,8 @@ body{
 
 .inputFill{
     font-family: 'Orbitron', sans-serif;
-    font-size: 15px;
-    padding: 15px 40px;
+    font-size: 18px;
+    padding: 18px 50px;
     text-align: center;
     cursor: pointer;
     width:auto;
@@ -55,8 +56,8 @@ body{
 .serach_btns{
     font-family: 'Orbitron', sans-serif;
     color: yellow;
-    padding: 8px 40px;
-    border-radius: 5px;
+    padding: 12px 46px;
+    border-radius: 7px;
     border: 2px solid black;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.7);
@@ -74,6 +75,7 @@ body{
 /*------------------------------------------------------------------------------------------------*/
 .error_alert{
     padding: 10px;
+    margin-bottom: 10px;
     align-self: center;
     font-size: 36px;
     border: 2px solid white;
@@ -83,6 +85,7 @@ body{
 }
 #characters{
     margin-top: 20px;
+    margin-bottom: 20px;
     color:#fff;
     display: flex;
     flex-wrap:wrap ;
@@ -98,6 +101,10 @@ body{
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.2s;
+}
+.info:hover{
+    border-color: #ffd900;
 }
 .name{
     margin:0 0 10px 0;
@@ -132,14 +139,76 @@ body{
     cursor: pointer;
     color: #fff;
 }
-
-
-
 .planets{
     display: flex;
     gap: 10px;
     justify-content: center;
 }
-.nameOfPlanet{
+.name_of_planet{
+    color: #fff;
+}
+.title{
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 36px;
+    color: #ffd900;
+}
+.hint{
+    color: rgb(199, 199, 199);
+    margin-bottom: 20px;
+}
+.control{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-left:30px;
+}
+.buttons{
+    margin-bottom: 10px;
+}
+.control-btn{
+    box-shadow: 0 4px 40px 0.5px rgb(255, 255, 255);
+}
+.slider_planets{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 10px;
+    gap: 10px;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    width: 170px;
+    height: 70px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.526);
+    display: none;
+}
+.overlay.active {  
+    cursor: wait;
+    display: block;
+  }
+.overlay-text{
     color: #fff;
 }
