@@ -55,13 +55,22 @@ function reviceCharacter(characters){
     });
 }
 function creatDiv(data){
+  let iconGender = ''
+  if(data.gender === 'male' ){
+    iconGender = `<i class="fa-solid fa-mars"></i>`
+  }else if (data.gender === 'female'){
+    iconGender = `<i class="fa-solid fa-venus"></i>`
+  }else{
+    iconGender = data.gender
+  }
+  console.log(data.gender);
     characters.innerHTML += `
     <div class="info">
         <img src='photos/${data.name}.webp'  alt="photo"" class="image">
         <div class="allInfo">
             <h2 class="name">${data.name}</h2>
             <p class="years">${data.birth_year}</p>
-            <p class="gender">${data.gender}</p>
+            <p class="gender">Gender: ${iconGender}</p>
         </div>
     </div>
     ` ;
