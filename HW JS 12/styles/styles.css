@@ -205,10 +205,12 @@ body , html{
     background-color: rgba(0, 0, 0, 0.526);
     display: none;
 }
-.overlay.active {  
+.active {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: wait;
-    display: block;
-  }
+}
 .overlay-text{
     color: #fff;
 }

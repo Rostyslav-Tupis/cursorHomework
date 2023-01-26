@@ -3,7 +3,7 @@ const container = document.querySelector('.container')
 const characters = document.getElementById('characters');
 const btnback = document.querySelector('.back')
 const slider_planets = document.querySelector('.slider_planets')
-
+const overlay = document.getElementById('overlay')
 //planets ! ----------------------------------------------------------------
 let planetsPrevious = document.getElementById('planets-previous')
 let planetsNext = document.getElementById('planets-next')
@@ -20,12 +20,12 @@ function removeInfo(info){
 }
 async function getCharacterFromFlim(reviceCharacter){
     let info = document.querySelectorAll('.info')
-    console.log(info);
     removeInfo(info)
     let error = document.querySelectorAll('.error_alert')
     const inputValue = document.querySelector('.inputFill').value;
     let mainLink = fetch(`https://swapi.dev/api/films/${inputValue}/`);
     try{
+        overlay.classList.add('active');
         let respones = await mainLink;
         let data = await respones.json();
         let allCharacter =  data.characters;
@@ -33,12 +33,15 @@ async function getCharacterFromFlim(reviceCharacter){
             elem.remove(info)
         })
         reviceCharacter(allCharacter)
+        overlay.classList.remove('active')
+
     }
     catch(err){
         let alert = document.createElement("p")
         alert.classList.add("error_alert");
         alert.innerText = "Opps something goes wrong, please try again"
         characters.append(alert)
+        overlay.classList.remove('active')
     }
 }
 function reviceCharacter(characters){
