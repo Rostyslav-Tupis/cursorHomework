@@ -1,0 +1,14 @@
+body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#text{
+    font-size: 14px;
+}
+.container{
+    margin-bottom: 30px;
+}
+button{
+    padding: 5px 8px;
+}
