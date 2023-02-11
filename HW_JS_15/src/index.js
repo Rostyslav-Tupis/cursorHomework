@@ -11,6 +11,8 @@ import {Student} from './hw_functios/hw8'
 import {generateBlocks} from './hw_functios/hw9'
 import {getRandomChinese} from './hw_functios/hw11'
 
+import Img from './imgs/vader.png'
+
 
 let maxDigit = maxNumber(15 , 123 , 90);
 document.querySelector('#hw1').textContent =  `Homerwork 1; Max number : ${maxDigit}`;
@@ -69,6 +71,11 @@ document.querySelector('#hw9').textContent = `Homerwork 9:`;
 let signs = getRandomChinese(5)
 document.querySelector('#hw11').textContent = `Homerwork 11;output in console`;
 // -----------------------------------------------------------------------------
+
+const myIcon = new Image();
+myIcon.src = Img;
+document.querySelector('#hw12').textContent = `Homerwork 12:`;
+document.getElementById("hwIMG").appendChild(myIcon)
 
 
 

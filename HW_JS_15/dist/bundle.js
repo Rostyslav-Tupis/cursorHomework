@@ -116,7 +116,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.css */ \"./src/styles/main.css\");\n/* harmony import */ var _hw_functios_hw1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./hw_functios/hw1 */ \"./src/hw_functios/hw1.js\");\n/* harmony import */ var _hw_functios_hw2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./hw_functios/hw2 */ \"./src/hw_functios/hw2.js\");\n/* harmony import */ var _hw_functios_hw3__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./hw_functios/hw3 */ \"./src/hw_functios/hw3.js\");\n/* harmony import */ var _hw_functios_hw4__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./hw_functios/hw4 */ \"./src/hw_functios/hw4.js\");\n/* harmony import */ var _hw_functios_hw5__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./hw_functios/hw5 */ \"./src/hw_functios/hw5.js\");\n/* harmony import */ var _hw_functios_hw6__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./hw_functios/hw6 */ \"./src/hw_functios/hw6.js\");\n/* harmony import */ var _hw_functios_hw7__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./hw_functios/hw7 */ \"./src/hw_functios/hw7.js\");\n/* harmony import */ var _hw_functios_hw8__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./hw_functios/hw8 */ \"./src/hw_functios/hw8.js\");\n/* harmony import */ var _hw_functios_hw9__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./hw_functios/hw9 */ \"./src/hw_functios/hw9.js\");\n/* harmony import */ var _hw_functios_hw11__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./hw_functios/hw11 */ \"./src/hw_functios/hw11.js\");\n\n\n\n\n\n\n\n\n\n\n\nvar maxDigit = (0,_hw_functios_hw1__WEBPACK_IMPORTED_MODULE_1__.maxNumber)(15, 123, 90);\ndocument.querySelector('#hw1').textContent = \"Homerwork 1; Max number : \".concat(maxDigit);\n// -----------------------------------------------------------------------------\n\nvar sum = (0,_hw_functios_hw2__WEBPACK_IMPORTED_MODULE_2__.getSum)(false, 10, 12);\ndocument.querySelector('#hw2').textContent = \"Homerwork 2; Sum : \".concat(sum, \" \");\n// -----------------------------------------------------------------------------\n\nvar randomNumber = (0,_hw_functios_hw3__WEBPACK_IMPORTED_MODULE_3__.getRandomNumber)(1, 10);\ndocument.querySelector('#hw3').textContent = \"Homerwork 3; Random number : \".concat(randomNumber, \" \");\n// -----------------------------------------------------------------------------\n\nvar studentsPais = [\"Олександр\", \"Ігор\", \"Олена\", \"Іра\", \"Олексій\", \"Світлана\"];\nvar pairs = (0,_hw_functios_hw4__WEBPACK_IMPORTED_MODULE_4__.getPairs)(studentsPais);\ndocument.querySelector('#hw4').textContent = \"Homerwork 4 :Pairs of student: \".concat(pairs);\n// -----------------------------------------------------------------------------\n\nvar evenNumbers = (0,_hw_functios_hw5__WEBPACK_IMPORTED_MODULE_5__.filterEvenNumbers)(1, 2, 3, 4, 5, 6);\ndocument.querySelector('#hw5').textContent = \"Homerwork 5; Even numbers  : \".concat(evenNumbers);\nvar students = [{\n  name: \"Tanya\",\n  course: 3,\n  subjects: {\n    math: [4, 4, 3, 4],\n    algorithms: [3, 3, 3, 4, 4, 4],\n    data_science: [5, 5, 3, 4]\n  }\n}];\nvar subj = (0,_hw_functios_hw6__WEBPACK_IMPORTED_MODULE_6__.getSubject)(students[0]);\ndocument.querySelector('#hw6').textContent = \"Homerwork 6; Uppercase subject  : \".concat(subj);\n// -----------------------------------------------------------------------------\n\nvar ukraine = {\n  tax: 0.195,\n  middleSalary: 1789,\n  vacancies: 11476\n};\n(0,_hw_functios_hw7__WEBPACK_IMPORTED_MODULE_7__.getMySalary)(ukraine);\ndocument.querySelector('#hw7').textContent = \"Homerwork 7; My salary  :output in console\";\n// -----------------------------------------------------------------------------\n\nvar student1 = new _hw_functios_hw8__WEBPACK_IMPORTED_MODULE_8__.Student('Cursor', '3', 'Tupis Rostyslav Romanovich');\nvar studentInfo = student1.getInfo();\ndocument.querySelector('#hw8').textContent = \"Homerwork 8; Student  : \".concat(studentInfo);\n// -----------------------------------------------------------------------------\n\nvar block = (0,_hw_functios_hw9__WEBPACK_IMPORTED_MODULE_9__.generateBlocks)();\ndocument.querySelector('#hw9').textContent = \"Homerwork 9:\";\n// -----------------------------------------------------------------------------\n\nvar signs = (0,_hw_functios_hw11__WEBPACK_IMPORTED_MODULE_10__.getRandomChinese)(5);\ndocument.querySelector('#hw11').textContent = \"Homerwork 11;output in console\";\n// -----------------------------------------------------------------------------\n\n//# sourceURL=webpack://hw_js_15/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.css */ \"./src/styles/main.css\");\n/* harmony import */ var _hw_functios_hw1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./hw_functios/hw1 */ \"./src/hw_functios/hw1.js\");\n/* harmony import */ var _hw_functios_hw2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./hw_functios/hw2 */ \"./src/hw_functios/hw2.js\");\n/* harmony import */ var _hw_functios_hw3__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./hw_functios/hw3 */ \"./src/hw_functios/hw3.js\");\n/* harmony import */ var _hw_functios_hw4__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./hw_functios/hw4 */ \"./src/hw_functios/hw4.js\");\n/* harmony import */ var _hw_functios_hw5__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./hw_functios/hw5 */ \"./src/hw_functios/hw5.js\");\n/* harmony import */ var _hw_functios_hw6__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./hw_functios/hw6 */ \"./src/hw_functios/hw6.js\");\n/* harmony import */ var _hw_functios_hw7__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./hw_functios/hw7 */ \"./src/hw_functios/hw7.js\");\n/* harmony import */ var _hw_functios_hw8__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./hw_functios/hw8 */ \"./src/hw_functios/hw8.js\");\n/* harmony import */ var _hw_functios_hw9__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./hw_functios/hw9 */ \"./src/hw_functios/hw9.js\");\n/* harmony import */ var _hw_functios_hw11__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./hw_functios/hw11 */ \"./src/hw_functios/hw11.js\");\n/* harmony import */ var _imgs_vader_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./imgs/vader.png */ \"./src/imgs/vader.png\");\n\n\n\n\n\n\n\n\n\n\n\n\nvar maxDigit = (0,_hw_functios_hw1__WEBPACK_IMPORTED_MODULE_1__.maxNumber)(15, 123, 90);\ndocument.querySelector('#hw1').textContent = \"Homerwork 1; Max number : \".concat(maxDigit);\n// -----------------------------------------------------------------------------\n\nvar sum = (0,_hw_functios_hw2__WEBPACK_IMPORTED_MODULE_2__.getSum)(false, 10, 12);\ndocument.querySelector('#hw2').textContent = \"Homerwork 2; Sum : \".concat(sum, \" \");\n// -----------------------------------------------------------------------------\n\nvar randomNumber = (0,_hw_functios_hw3__WEBPACK_IMPORTED_MODULE_3__.getRandomNumber)(1, 10);\ndocument.querySelector('#hw3').textContent = \"Homerwork 3; Random number : \".concat(randomNumber, \" \");\n// -----------------------------------------------------------------------------\n\nvar studentsPais = [\"Олександр\", \"Ігор\", \"Олена\", \"Іра\", \"Олексій\", \"Світлана\"];\nvar pairs = (0,_hw_functios_hw4__WEBPACK_IMPORTED_MODULE_4__.getPairs)(studentsPais);\ndocument.querySelector('#hw4').textContent = \"Homerwork 4 :Pairs of student: \".concat(pairs);\n// -----------------------------------------------------------------------------\n\nvar evenNumbers = (0,_hw_functios_hw5__WEBPACK_IMPORTED_MODULE_5__.filterEvenNumbers)(1, 2, 3, 4, 5, 6);\ndocument.querySelector('#hw5').textContent = \"Homerwork 5; Even numbers  : \".concat(evenNumbers);\nvar students = [{\n  name: \"Tanya\",\n  course: 3,\n  subjects: {\n    math: [4, 4, 3, 4],\n    algorithms: [3, 3, 3, 4, 4, 4],\n    data_science: [5, 5, 3, 4]\n  }\n}];\nvar subj = (0,_hw_functios_hw6__WEBPACK_IMPORTED_MODULE_6__.getSubject)(students[0]);\ndocument.querySelector('#hw6').textContent = \"Homerwork 6; Uppercase subject  : \".concat(subj);\n// -----------------------------------------------------------------------------\n\nvar ukraine = {\n  tax: 0.195,\n  middleSalary: 1789,\n  vacancies: 11476\n};\n(0,_hw_functios_hw7__WEBPACK_IMPORTED_MODULE_7__.getMySalary)(ukraine);\ndocument.querySelector('#hw7').textContent = \"Homerwork 7; My salary  :output in console\";\n// -----------------------------------------------------------------------------\n\nvar student1 = new _hw_functios_hw8__WEBPACK_IMPORTED_MODULE_8__.Student('Cursor', '3', 'Tupis Rostyslav Romanovich');\nvar studentInfo = student1.getInfo();\ndocument.querySelector('#hw8').textContent = \"Homerwork 8; Student  : \".concat(studentInfo);\n// -----------------------------------------------------------------------------\n\nvar block = (0,_hw_functios_hw9__WEBPACK_IMPORTED_MODULE_9__.generateBlocks)();\ndocument.querySelector('#hw9').textContent = \"Homerwork 9:\";\n// -----------------------------------------------------------------------------\n\nvar signs = (0,_hw_functios_hw11__WEBPACK_IMPORTED_MODULE_10__.getRandomChinese)(5);\ndocument.querySelector('#hw11').textContent = \"Homerwork 11;output in console\";\n// -----------------------------------------------------------------------------\n\nvar myIcon = new Image();\nmyIcon.src = _imgs_vader_png__WEBPACK_IMPORTED_MODULE_11__;\ndocument.querySelector('#hw12').textContent = \"Homerwork 12:\";\ndocument.getElementById(\"hwIMG\").appendChild(myIcon);\n\n//# sourceURL=webpack://hw_js_15/./src/index.js?");
 
 /***/ }),
 
@@ -127,6 +127,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://hw_js_15/./src/styles/main.css?");
+
+/***/ }),
+
+/***/ "./src/imgs/vader.png":
+/*!****************************!*\
+  !*** ./src/imgs/vader.png ***!
+  \****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"vader.js\";\n\n//# sourceURL=webpack://hw_js_15/./src/imgs/vader.png?");
 
 /***/ })
 
@@ -169,6 +179,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -183,6 +205,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
